@@ -25,58 +25,58 @@
             указаны в миллионах долларов США, длительность — в минутах.
         </p>
 
-        <details open id="chart-details">
+        <details open>
             <summary>График</summary>
 
-            <form id="chart-form">
+            <form id="chart_form">
                 <fieldset>
                     <legend>Значение по оси OX</legend>
                     <p>
-                        <label><input type="radio" name="ox" id="ox-genre" checked> Жанр</label>
+                        <label><input type="radio" name="ox" id="ox_genre" checked> Жанр</label>
                     </p>
                     <p>
-                        <label><input type="radio" name="ox" id="ox-studio"> Студия</label>
+                        <label><input type="radio" name="ox" id="ox_studio"> Студия</label>
                     </p>
                     <p>
-                        <label><input type="radio" name="ox" id="ox-decade"> Десятилетие выпуска</label>
+                        <label><input type="radio" name="ox" id="ox_decade"> Десятилетие выпуска</label>
                     </p>
                 </fieldset>
 
                 <fieldset>
                     <legend>Показатель по оси OY</legend>
                     <p>
-                        <label><input type="checkbox" id="oy-min-gross" name="oy-min-gross" checked> Минимальные сборы, млн $</label>
+                        <label><input type="checkbox" id="oy_min_gross" name="oy_min_gross" checked> Минимальные сборы, млн $</label>
                     </p>
                     <p>
-                        <label><input type="checkbox" id="oy-max-gross" name="oy-max-gross"> Максимальные сборы, млн $</label>
+                        <label><input type="checkbox" id="oy_max_gross" name="oy_max_gross"> Максимальные сборы, млн $</label>
                     </p>
                     <p>
-                        <label><input type="checkbox" id="oy-total-gross" name="oy-total-gross"> Суммарные сборы, млн $</label>
+                        <label><input type="checkbox" id="oy_avg_gross" name="oy_avg_gross"> Средние сборы, млн $</label>
                     </p>
                 </fieldset>
 
-                <p><button type="button" id="build-button" name="build-button">Построить</button></p>
+                <p><button type="button" id="build_button" name="build_button">Построить</button></p>
             </form>
 
-            <p id="chart">Здесь будет график</p>
+            <p>Здесь будет график</p>
         </details>
 
-        <details id="filter-details">
+        <details open>
             <summary>Фильтр</summary>
 
-            <form id="filter-form">
+            <form id="filter_form">
                 <p>
-                    <label>Название: <input id="filter-title" name="filter-title"></label>
+                    <label>Название: <input id="filter_title" name="filter_title"></label>
                 </p>
 
                 <p>
-                    <label>Оригинальное название: <input id="filter-original" name="filter-original"></label>
+                    <label>Оригинальное название: <input id="filter_original" name="filter_original"></label>
                 </p>
 
                 <p>
                     <label>
                         Жанр:
-                        <select id="filter-genre" name="filter-genre">
+                        <select id="filter_genre" name="filter_genre">
                             <option value="any">Любой</option>
                             <option value="biography">Биография</option>
                             <option value="action">Боевик</option>
@@ -96,13 +96,13 @@
                 </p>
 
                 <p>
-                    <label>Режиссёр: <input id="filter-director" name="filter-director"></label>
+                    <label>Режиссёр: <input id="filter_director" name="filter_director"></label>
                 </p>
 
                 <p>
                     <label>
                         Студия:
-                        <select id="filter-studio" name="filter-studio">
+                        <select id="filter_studio" name="filter_studio">
                             <option value="any">Любая</option>
                             <option value="20th_century_fox">20th Century Fox</option>
                             <option value="columbia">Columbia</option>
@@ -122,49 +122,49 @@
 
                 <p>
                     Год выпуска:
-                    <label>от <input type="number" min="1970" max="2026" id="filter-year-from" name="filter-year-from"></label>
-                    <label>до <input type="number" min="1970" max="2026" id="filter-year-to" name="filter-year-to"></label>
+                    <label>от <input type="number" min="1970" max="2026" id="filter_year_from" name="filter_year_from"></label>
+                    <label>до <input type="number" min="1970" max="2026" id="filter_year_to" name="filter_year_to"></label>
                 </p>
 
                 <p>
                     Длительность, мин:
-                    <label>от <input type="number" min="60" max="240" id="filter-duration-from" name="filter-duration-from"></label>
-                    <label>до <input type="number" min="60" max="240" id="filter-duration-to" name="filter-duration-to"></label>
+                    <label>от <input type="number" min="60" max="240" id="filter_duration_from" name="filter_duration_from"></label>
+                    <label>до <input type="number" min="60" max="240" id="filter_duration_to" name="filter_duration_to"></label>
                 </p>
 
                 <p>
                     Бюджет, млн $:
-                    <label>от <input type="number" min="0" max="400" step="0.1" id="filter-budget-from" name="filter-budget-from"></label>
-                    <label>до <input type="number" min="0" max="400" step="0.1" id="filter-budget-to" name="filter-budget-to"></label>
+                    <label>от <input type="number" min="0" max="400" step="0.1" id="filter_budget_from" name="filter_budget_from"></label>
+                    <label>до <input type="number" min="0" max="400" step="0.1" id="filter_budget_to" name="filter_budget_to"></label>
                 </p>
 
                 <p>
                     Сборы, млн $:
-                    <label>от <input type="number" min="0" max="3000" id="filter-gross-from" name="filter-gross-from"></label>
-                    <label>до <input type="number" min="0" max="3000" id="filter-gross-to" name="filter-gross-to"></label>
+                    <label>от <input type="number" min="0" max="3000" id="filter_gross_from" name="filter_gross_from"></label>
+                    <label>до <input type="number" min="0" max="3000" id="filter_gross_to" name="filter_gross_to"></label>
                 </p>
 
                 <p>
                     Рейтинг IMDb:
-                    <label>от <input type="number" min="1" max="10" step="0.1" id="filter-rating-from" name="filter-rating-from"></label>
-                    <label>до <input type="number" min="1" max="10" step="0.1" id="filter-rating-to" name="filter-rating-to"></label>
+                    <label>от <input type="number" min="1" max="10" step="0.1" id="filter_rating_from" name="filter_rating_from"></label>
+                    <label>до <input type="number" min="1" max="10" step="0.1" id="filter_rating_to" name="filter_rating_to"></label>
                 </p>
 
                 <p>
-                    <button type="button" id="find-button" name="find-button">Найти</button>
-                    <button type="button" id="reset-button" name="reset-button">Сбросить</button>
+                    <button type="button" id="find_button" name="find_button">Найти</button>
+                    <button type="button" id="reset_button" name="reset_button">Сбросить</button>
                 </p>
             </form>
         </details>
 
-        <details id="sort-details">
+        <details open>
             <summary>Сортировка</summary>
 
-            <form id="sort-form">
+            <form id="sort_form">
                 <p>
                     <label>
                         Первый уровень:
-                        <select id="sort-1" name="sort-1">
+                        <select id="sort_1" name="sort_1">
                             <option value="none">Нет</option>
                             <option value="title">Название</option>
                             <option value="original_title">Оригинальное название</option>
@@ -178,13 +178,13 @@
                             <option value="rating">Рейтинг IMDb</option>
                         </select>
                     </label>
-                    <label><input type="checkbox" id="sort-1-desc" name="sort-1-desc"> по убыванию?</label>
+                    <label><input type="checkbox" id="sort_1_desc" name="sort_1_desc"> по убыванию?</label>
                 </p>
 
                 <p>
                     <label>
                         Второй уровень:
-                        <select id="sort-2" name="sort-2">
+                        <select id="sort_2" name="sort_2">
                             <option value="none">Нет</option>
                             <option value="title">Название</option>
                             <option value="original_title">Оригинальное название</option>
@@ -198,13 +198,13 @@
                             <option value="rating">Рейтинг IMDb</option>
                         </select>
                     </label>
-                    <label><input type="checkbox" id="sort-2-desc" name="sort-2-desc"> по убыванию?</label>
+                    <label><input type="checkbox" id="sort_2_desc" name="sort_2_desc"> по убыванию?</label>
                 </p>
 
                 <p>
                     <label>
                         Третий уровень:
-                        <select id="sort-3" name="sort-3">
+                        <select id="sort_3" name="sort_3">
                             <option value="none">Нет</option>
                             <option value="title">Название</option>
                             <option value="original_title">Оригинальное название</option>
@@ -218,16 +218,16 @@
                             <option value="rating">Рейтинг IMDb</option>
                         </select>
                     </label>
-                    <label><input type="checkbox" id="sort-3-desc" name="sort-3-desc"> по убыванию?</label>
+                    <label><input type="checkbox" id="sort_3_desc" name="sort_3_desc"> по убыванию?</label>
                 </p>
 
-                <p><button type="button" id="sort-button" name="sort-button">Сортировать</button></p>
+                <p><button type="button" id="sort_button" name="sort_button">Сортировать</button></p>
             </form>
         </details>
 
         <hr>
 
-        <table id="movies-table" border="1" cellpadding="5" cellspacing="0">
+        <table border="1" cellpadding="5" cellspacing="0">
             <caption>
                 Голливудские фильмы
             </caption>
@@ -247,7 +247,7 @@
                 </tr>
             </thead>
 
-            <tbody id="movies-body">
+            <tbody>
                 <tr>
                     <th>Побег из Шоушенка</th>
                     <td>The Shawshank Redemption</td>
