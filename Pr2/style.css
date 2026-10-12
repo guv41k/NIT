@@ -1,0 +1,118 @@
+h1 {
+    padding: 1%;
+    font-size: 16px;
+    color: white;
+    background: skyblue;
+}
+
+h2 {
+    font-size: 18px;
+    text-align: center;
+}
+
+.menu {
+    margin: 1% 0%;
+    padding: 0;
+}
+
+.menu li {
+    display: inline;
+}
+
+.menu a {
+    display: inline-block;
+    padding: 1% 2%;
+    text-decoration: none;
+    color: black;
+}
+
+.menu li:first-child a {
+    color: white;
+    background: skyblue;
+}
+
+.page {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.gallery img {
+    width: 23.8%;
+}
+
+.gallery img:nth-child(5n + 1) {
+    width: 48%;
+}
+
+.content {
+    padding-top: 1%;
+    overflow: hidden;
+}
+
+.main {
+    float: left;
+    width: 68%;
+}
+
+.article {
+    margin: 0 auto 1%;
+    padding: 1%;
+    overflow: hidden;
+    border: 1px gray solid;
+}
+
+.article div {
+    float: left;
+    width: 34%;
+    margin: 1%;
+}
+
+.article img {
+    float: left;
+    width: 24%;
+    margin: 1%;
+}
+
+.article:first-child p + p {
+    text-align: right;
+}
+
+.aside {
+    margin-left: 1%;
+    float: left;
+    width: 28%;
+    border-left: 1px black solid;
+}
+
+.item {
+    margin: 4.5% 2% 0;
+}
+
+.item div {
+    display: inline-block;
+    width: 63%;
+    vertical-align: top;
+}
+
+.item img {
+    display: inline-block;
+    width: 31%;
+    margin-left: 3%;
+    vertical-align: top;
+}
+
+.item h2 {
+    text-align: right;
+}
+
+.item p:last-child {
+    text-align: right;
+}
+
+.footer {
+    clear: both;
+    margin-top: 1%;
+    padding: 1%;
+    text-align: center;
+    background: skyblue;
+}
