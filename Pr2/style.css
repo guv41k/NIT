@@ -1,8 +1,11 @@
+h1, .menu li:first-child a {
+    color: white;
+    background: skyblue;
+}
+
 h1 {
     padding: 1%;
     font-size: 16px;
-    color: white;
-    background: skyblue;
 }
 
 h2 {
@@ -11,7 +14,7 @@ h2 {
 }
 
 .menu {
-    margin: 1% 0%;
+    margin: 1% 0;
     padding: 0;
 }
 
@@ -24,11 +27,6 @@ h2 {
     padding: 1% 2%;
     text-decoration: none;
     color: black;
-}
-
-.menu li:first-child a {
-    color: white;
-    background: skyblue;
 }
 
 .page {
@@ -52,10 +50,12 @@ h2 {
 .main {
     float: left;
     width: 68%;
+    padding-right: 1%;
+    border-right: 1px black solid;
 }
 
 .article {
-    margin: 0 auto 1%;
+    margin-bottom: 1%;
     padding: 1%;
     overflow: hidden;
     border: 1px gray solid;
@@ -78,10 +78,8 @@ h2 {
 }
 
 .aside {
-    margin-left: 1%;
     float: left;
     width: 28%;
-    border-left: 1px black solid;
 }
 
 .item {
@@ -95,17 +93,12 @@ h2 {
 }
 
 .item img {
-    display: inline-block;
     width: 31%;
     margin-left: 3%;
     vertical-align: top;
 }
 
-.item h2 {
-    text-align: right;
-}
-
-.item p:last-child {
+.item h2, .item p:last-child {
     text-align: right;
 }
 
