@@ -1,5 +1,5 @@
 .menu {
-    margin: 1% 0;
+    margin: 5px 0;
     padding: 0;
 }
 
@@ -12,6 +12,7 @@ h1,
 h1 {
     padding: 1%;
     font-size: 16px;
+    margin-bottom: 0;
 }
 
 .menu li {
@@ -23,6 +24,7 @@ h1 {
     padding: 1% 2%;
     text-decoration: none;
     color: black;
+    border-radius: 0 1em;
 }
 
 .page {
@@ -76,6 +78,7 @@ h2 {
 
 .article div,
 .article img {
+    display: block;
     float: left;
     width: 34%;
     margin: 1%;
@@ -94,6 +97,10 @@ h2 {
     width: 29%;
 }
 
+.item {
+    overflow: hidden;
+}
+
 .item div {
     display: inline-block;
     width: 63%;
@@ -102,6 +109,7 @@ h2 {
 .item img {
     width: 30%;
     float: right;
+    height: 100%;
 }
 
 .item h2,
@@ -110,7 +118,6 @@ h2 {
 }
 
 .footer {
-    clear: both;
     margin-top: 1%;
     padding: 1%;
     text-align: center;
