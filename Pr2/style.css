@@ -1,4 +1,10 @@
-h1, .menu li:first-child a {
+.menu {
+    margin: 1% 0;
+    padding: 0;
+}
+
+h1,
+.menu li:first-child a {
     color: white;
     background: skyblue;
 }
@@ -6,16 +12,6 @@ h1, .menu li:first-child a {
 h1 {
     padding: 1%;
     font-size: 16px;
-}
-
-h2 {
-    font-size: 18px;
-    text-align: center;
-}
-
-.menu {
-    margin: 1% 0;
-    padding: 0;
 }
 
 .menu li {
@@ -34,62 +30,74 @@ h2 {
     margin: 0 auto;
 }
 
+h2 {
+    font-size: 18px;
+    text-align: center;
+}
+
+.gallery {
+    overflow: hidden;
+}
+
 .gallery img {
-    width: 23.8%;
+    float: left;
+    width: 24.6%;
+    margin: 0 0 0.5% 0.5%;
 }
 
 .gallery img:nth-child(5n + 1) {
-    width: 48%;
+    width: 49.7%;
+}
+
+.gallery img:nth-child(3n + 1) {
+    clear: left;
+    margin-left: 0;
 }
 
 .content {
-    padding-top: 1%;
     overflow: hidden;
 }
 
 .main {
     float: left;
-    width: 68%;
-    padding-right: 1%;
+    width: 67%;
+    padding-right: 2%;
     border-right: 1px black solid;
 }
 
 .article {
-    margin-bottom: 1%;
     padding: 1%;
     overflow: hidden;
     border: 1px gray solid;
 }
 
-.article div {
+.article+.article {
+    margin-top: 1%;
+}
+
+.article div,
+.article img {
     float: left;
     width: 34%;
     margin: 1%;
 }
 
 .article img {
-    float: left;
     width: 24%;
-    margin: 1%;
 }
 
-.article:first-child p + p {
+.article:first-child p+p {
     text-align: right;
 }
 
 .aside {
-    float: left;
-    width: 28%;
-}
-
-.item {
-    margin: 4.5% 2% 0;
+    float: right;
+    width: 29%;
 }
 
 .item div {
     display: inline-block;
     width: 63%;
-    vertical-align: top;
 }
 
 .item img {
@@ -98,7 +106,8 @@ h2 {
     vertical-align: top;
 }
 
-.item h2, .item p:last-child {
+.item h2,
+.item p:last-child {
     text-align: right;
 }
 
