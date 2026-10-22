@@ -66,9 +66,8 @@ h2 {
 }
 
 .article {
-    padding: 1%;
     overflow: hidden;
-    border: 1px gray solid;
+    border: 1px black solid;
 }
 
 .article+.article {
@@ -101,9 +100,8 @@ h2 {
 }
 
 .item img {
-    width: 31%;
-    margin-left: 3%;
-    vertical-align: top;
+    width: 30%;
+    float: right;
 }
 
 .item h2,
